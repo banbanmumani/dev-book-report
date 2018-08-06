@@ -16,8 +16,14 @@
     1. 하지만 난 계속 java 를 사용할것이고, 변화를 받아들일 것이기 때문에 module 시스템을 이해하기 위해 책을 구매 했다. 
     1. 그리고 만약 내가 하위호환성을 깨야하는 상황이 오면 어떤 선택을 할 것인지 고민 하는 계기가 되었다.
 1. 자바 모듈은 기존 자바 프로젝트와는 다른 폴더 구조가 필요하다.
-    1. module-info.java 의 첫인상은 모듈의 정보를 정의한다는 점에서 js에서 package.json 느낌이 든다. 둘을 비교하는 것으 옳은 것일까?
-    
+    1. module-info.java 의 첫인상은 모듈의 정보를 정의한다는 점에서 js에서 package.json 느낌이 든다. 둘을 비교하는 것은 옳은 것일까?
+1. 모듈시스템의 큰 특징은 다른 모듈이면 public 접근 제어자를 가진 클레스, method라 해도 연관 관계를 설정하지 않으면 접근할 수 없다는 것이다.
+    1. Visibility(가시성)은 java9의 큰 변화다.
+1. 모듈의 requires 는 모듈 단위고 exports는 패키지 단위이다.
+    1. com.banbanmumani.util 패키지를 export 한 경우 com.banbanmumani.util.impl 패키지도 export 될것이라 예상했는데 그렇지 않다. 
+    1. 자바의 패키지는 계층적이지 않다.
+1. 모듈 시스템을 통해 좀더 캡슐화를 이를 수 있다고 느껴진다. 이제 조금 java9의 철학에 공감이 간다.
+
 # 완독일
 # 독서 평가
 # [책정보](http://www.hanbit.co.kr/store/books/look.php?p_code=B7608640342)
